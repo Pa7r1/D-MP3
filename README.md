@@ -1,4 +1,6 @@
 instalaciones:
+descargar e instalar FFmpeg : https://ffmpeg.org/download.html#build-windows.
+
 ruta backend: pip install requirements
 ruta frontend: npm i
 
