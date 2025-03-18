@@ -16,7 +16,7 @@ app.add_middleware(
 
 class VideoRequest (BaseModel):
     url:str
-    download_folder: str #ruta de descarga para la musica
+    download_folder: str #ruta de descarga para la musica.
 
 @app.post("/download")
 async def download_video (video: VideoRequest):
@@ -33,7 +33,7 @@ async def download_video (video: VideoRequest):
                 'preferredquality': '192'
             }],
             'outtmpl': os.path.join(video.download_folder, '%(title)s.%(ext)s'),
-            'ffmpeg_location': 'C:\\FFmpeg\\bin', #configura la ruta de FFmpeg donde lo tengas instalado
+            'ffmpeg_location': 'C:\\FFmpeg\\bin', #configura la ruta de FFmpeg donde lo tengas instalado.
             'noplaylist':False,
             'ignoreerrors': True
         }
